@@ -65,12 +65,12 @@ void SDHC_InterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_CORE_TIMER_VECTOR, ipl1AUTO) CORE_TIMER_Handler (void)
+void __ISR(_CORE_TIMER_VECTOR, ipl1SRS) CORE_TIMER_Handler (void)
 {
     CORE_TIMER_InterruptHandler();
 }
 
-void __ISR(_SDHC_VECTOR, ipl1AUTO) SDHC_Handler (void)
+void __ISR(_SDHC_VECTOR, ipl1SRS) SDHC_Handler (void)
 {
     SDHC_InterruptHandler();
 }

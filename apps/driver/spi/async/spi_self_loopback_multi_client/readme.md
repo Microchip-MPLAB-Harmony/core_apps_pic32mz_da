@@ -47,7 +47,6 @@ The following table shows the target hardware for the application projects.
 - Use jumper wire to connect "Pin 21 of J15" to "Pin 19 of J15"
     - SDI2 is mapped to RD7 that is routed to "Pin 21 of J15"
     - SDO2 is mapped to RG8 that is routed to "Pin 19 of J15"
-    - Connect a micro USB cable to the USB DEBUG port J19
 
 ### Setting up [PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320010-C)
 
@@ -55,7 +54,6 @@ The following table shows the target hardware for the application projects.
 - Use jumper wire to connect "Pin 21 of J15" to "Pin 19 of J15"
     - SDI2 is mapped to RD7 that is routed to "Pin 21 of J15"
     - SDO2 is mapped to RG8 that is routed to "Pin 19 of J15"
-    - Connect a micro USB cable to the USB DEBUG port J19
 
 ## Running the Application
 

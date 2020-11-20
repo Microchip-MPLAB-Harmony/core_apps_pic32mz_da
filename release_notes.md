@@ -10,6 +10,20 @@ nav_order: 99
 
 ## Harmony 3 driver and system service application examples for PIC32MZ DA family  v3.0.1
 
+### New Features
+- Added discover.microchip.com metadata
+
+### Bug fixes
+- Same as v3.0.0
+
+### Known Issues
+- Same as v3.0.0
+
+### Development Tools
+- Same as v3.0.0
+
+## Harmony 3 driver and system service application examples for PIC32MZ DA family  v3.0.1
+
 - Updated apps/driver/memory/async/nvm_sst26_read_write application
 
 ### New Features

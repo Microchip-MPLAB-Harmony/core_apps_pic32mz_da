@@ -47,6 +47,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [MPFS filesystem using NVM Media](apps/fs/nvm_mpfs/readme.md) | This application shows an example of implementing a MPFS disk in device Internal Flash memory |
 | [FAT filesystem using NVM and SST26 Media](apps/fs/nvm_sqi_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access multiple files across multiple media (NVM, SQI FLASH) |
 | [FAT filesystem using SDMMC Media](apps/fs/sdmmc_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver |
+| [FAT filesystem throughput using SDMMC Media](apps/fs/sdmmc_fat_throughput/readme.md) | This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver |
 | [FAT filesystem using SST26 Media](apps/fs/sqi_flash_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access SQI based SST26 flash media |
 | [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status |
 | [FreeRTOS Task Notification](apps/rtos/freertos/task_notification_freertos/readme.md) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore |

@@ -50,7 +50,9 @@
 // *****************************************************************************
 
 #include "configuration.h"
+#include "interrupts.h"
 #include "definitions.h"
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -64,7 +66,7 @@ void SQI1_InterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_SQI1_VECTOR, ipl1SRS) SQI1_Handler (void)
+void __ISR(_SQI1_VECTOR, ipl1AUTO) SQI1_Handler (void)
 {
     SQI1_InterruptHandler();
 }

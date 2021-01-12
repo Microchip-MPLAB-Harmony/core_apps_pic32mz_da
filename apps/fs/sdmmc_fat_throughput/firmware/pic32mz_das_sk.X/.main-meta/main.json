@@ -42,14 +42,14 @@
 				"Development Kit", "PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit"
 			],
 			[
-				"Harmony", "Middleware", "File System (FS)", "SDMMC_FAT"
+				"Harmony", "Middleware", "File System (FS)", "SDMMC_FAT_THROUGHPUT"
 			],
 			[
-				"File System (FS)", "SDMMC_FAT"
+				"File System (FS)", "SDMMC_FAT_THROUGHPUT"
 			]
 		],
 		"peripherals": [
-			"SDMMC_FAT"
+			"SDMMC_FAT_THROUGHPUT"
 		],
 		"keywords": [
 			"MHC",

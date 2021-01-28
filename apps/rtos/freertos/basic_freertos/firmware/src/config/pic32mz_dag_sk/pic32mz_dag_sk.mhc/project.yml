@@ -461,13 +461,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
-- generatedChecksum: 43C06263FCC3AFC60E1B2B082B56BB7F
+- generatedChecksum: BC2E7CE03E5C2C883565BBB47469341E
   logicalPath: config\pic32mz_dag_sk
   name: p32MZ2064DAG169.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 43C06263FCC3AFC60E1B2B082B56BB7F
+  userChecksum: BC2E7CE03E5C2C883565BBB47469341E
 format_version: v1.0
 libraries: []
 settings:

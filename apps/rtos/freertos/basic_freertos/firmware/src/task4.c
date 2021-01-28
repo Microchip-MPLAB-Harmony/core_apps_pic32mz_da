@@ -124,9 +124,6 @@ void TASK4_Tasks ( void )
 {
     bool status = false;
     TickType_t timeNow;
-    
-    GPIO_PinInterruptCallbackRegister(SWITCH1_PIN, SwitchPress_Handler, (uintptr_t)NULL);
-    GPIO_PinInterruptEnable(SWITCH1_PIN);
 
     switchPressSemaphore = xSemaphoreCreateBinary();
 
@@ -134,6 +131,9 @@ void TASK4_Tasks ( void )
     {
         status = true;
     }
+
+    GPIO_PinInterruptCallbackRegister(SWITCH1_PIN, SwitchPress_Handler, (uintptr_t)NULL);
+    GPIO_PinInterruptEnable(SWITCH1_PIN);
 
     while (status == true)
     {

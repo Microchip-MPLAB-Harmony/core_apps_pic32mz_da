@@ -461,13 +461,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
-- generatedChecksum: 7C4CFAB6A66327152237C6EDCB12E377
+- generatedChecksum: C80077C804F75407DD1AAC6C0E5422E3
   logicalPath: config\pic32mz_das_sk
   name: p32MZ2064DAS169.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 7C4CFAB6A66327152237C6EDCB12E377
+  userChecksum: C80077C804F75407DD1AAC6C0E5422E3
 format_version: v1.0
 libraries: []
 settings:

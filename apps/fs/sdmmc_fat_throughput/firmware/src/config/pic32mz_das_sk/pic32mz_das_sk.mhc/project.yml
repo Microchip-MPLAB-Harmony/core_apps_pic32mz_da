@@ -13,13 +13,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 67010051A2CB3915F27B78F202691B33
-- generatedChecksum: EB450FD3BF1502E0CF6912FBE68299A7
+- generatedChecksum: 08652B594EF55154284FC067A703DF57
   logicalPath: config\pic32mz_das_sk\system\fs\fat_fs\hardware_access
   name: diskio.c
   physicalPath: system\fs\fat_fs\hardware_access
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EB450FD3BF1502E0CF6912FBE68299A7
+  userChecksum: 08652B594EF55154284FC067A703DF57
 - generatedChecksum: 875B9DA0764A056F51F47040A3214FCA
   logicalPath: config\pic32mz_das_sk\driver\sdmmc
   name: drv_sdmmc.c
@@ -41,13 +41,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4238740A6A08738E296E6139E26E53D8
-- generatedChecksum: D76793338318EDAA924B78F23050562C
+- generatedChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
   logicalPath: config\pic32mz_das_sk\system\fs\fat_fs\file_system
   name: ff.c
   physicalPath: system\fs\fat_fs\file_system
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D76793338318EDAA924B78F23050562C
+  userChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
 - generatedChecksum: 9E153A6D4F8E0EA1F6901BAED7DD80FD
   logicalPath: config\pic32mz_das_sk\system\fs\fat_fs\file_system
   name: ffunicode.c
@@ -174,13 +174,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C95CE0ABB86E6B11CF77E8891D294510
-- generatedChecksum: 40A99C84F50EB7DFAA579B8675F140DD
+- generatedChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
   logicalPath: config\pic32mz_das_sk\system\time
   name: sys_time.c
   physicalPath: system\time\src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 40A99C84F50EB7DFAA579B8675F140DD
+  userChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
 - generatedChecksum: CAAB0B44BE9900DF798D7E10899F1A98
   logicalPath: config\pic32mz_das_sk
   name: tasks.c
@@ -209,13 +209,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F4EB49B193C0EF13C8EE97223D6FFD6E
-- generatedChecksum: 9EABBB67FE55CCE5362E60266195D5EE
+- generatedChecksum: 3DB70447DA874EAFC299A42A76B03E52
   logicalPath: config\pic32mz_das_sk
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9EABBB67FE55CCE5362E60266195D5EE
+  userChecksum: 3DB70447DA874EAFC299A42A76B03E52
 - generatedChecksum: 78DCEA3E159E868679DFBC4F91867C6C
   logicalPath: config\pic32mz_das_sk
   name: definitions.h
@@ -279,20 +279,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 1C9FC02901ED93D2A6B045D1E4837C6D
-- generatedChecksum: FD5F600EA8957BBC8E0325408BE3C811
+- generatedChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
   logicalPath: config\pic32mz_das_sk\system\fs\fat_fs\file_system
   name: ff.h
   physicalPath: system\fs\fat_fs\file_system
   security: NON_SECURE
   type: HEADER
-  userChecksum: FD5F600EA8957BBC8E0325408BE3C811
-- generatedChecksum: B98362FC34D709E2D88A54F45EB7182F
+  userChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
+- generatedChecksum: 4E1DC558E64EF7706189FC3224899E86
   logicalPath: config\pic32mz_das_sk\system\fs\fat_fs\file_system
   name: ffconf.h
   physicalPath: system\fs\fat_fs\file_system
   security: NON_SECURE
   type: HEADER
-  userChecksum: B98362FC34D709E2D88A54F45EB7182F
+  userChecksum: 4E1DC558E64EF7706189FC3224899E86
 - generatedChecksum: 4CF4A86296482D5331331BA301C20BB2
   logicalPath: config\pic32mz_das_sk
   name: interrupts.h
@@ -314,13 +314,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0AC88C49E4585B606FD5AC6804F0C340
-- generatedChecksum: B358678B02AC7D3AD6CC80621ECC826D
+- generatedChecksum: B040122CCA94A0636810D6F15F13B751
   logicalPath: config\pic32mz_das_sk\osal
   name: osal_impl_basic.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
-  userChecksum: B358678B02AC7D3AD6CC80621ECC826D
+  userChecksum: B040122CCA94A0636810D6F15F13B751
 - generatedChecksum: 37885E3505BF5B0FD6AFE768807361C1
   logicalPath: config\pic32mz_das_sk\peripheral\cache
   name: plib_cache.h
@@ -412,13 +412,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: DDC1AA937FC332670372DC2E7B5CA1F2
-- generatedChecksum: 67904617BD60BD3657328D85DC8C48F7
+- generatedChecksum: 0D9FE9035E3AA8082C5657240106F2DC
   logicalPath: config\pic32mz_das_sk\system\fs
   name: sys_fs_fat_interface.h
   physicalPath: system\fs
   security: NON_SECURE
   type: HEADER
-  userChecksum: 67904617BD60BD3657328D85DC8C48F7
+  userChecksum: 0D9FE9035E3AA8082C5657240106F2DC
 - generatedChecksum: 0D162D1868A187FDC092657020E668D8
   logicalPath: config\pic32mz_das_sk\system\fs
   name: sys_fs_local.h
@@ -517,13 +517,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
-- generatedChecksum: 7C4CFAB6A66327152237C6EDCB12E377
+- generatedChecksum: C80077C804F75407DD1AAC6C0E5422E3
   logicalPath: config\pic32mz_das_sk
   name: p32MZ2064DAS169.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 7C4CFAB6A66327152237C6EDCB12E377
+  userChecksum: C80077C804F75407DD1AAC6C0E5422E3
 format_version: v1.0
 libraries: []
 settings:

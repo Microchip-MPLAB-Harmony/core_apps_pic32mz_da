@@ -330,279 +330,339 @@ var myVariable = `
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat/readme.html",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html"
   },"55": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "FAT filesystem throughput using SDMMC Media",
+    "content": "This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver. ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#fat-filesystem-throughput-using-sdmmc-media",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#fat-filesystem-throughput-using-sdmmc-media"
+  },"56": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Description",
+    "content": "Application performs below filesystem operations and throughput calculations on SD-Card using both Aligned and Unaligned buffers . | Opens a file named throughput.txt in the root directory of the SD card | Writes 10 Megabytes of data to file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for write in Megabytes/second and displays on the console | Reads 10 Megabytes of data from file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for reading in Megabytes/second and displays on the console | Closes the file once read is completed | Checks if the Above steps need to be repeated for Unaligned buffer. If already done then it Glows an LED reporting success and the console will have throughput information for both Aligned and Unaligned buffers. | . File system layer uses: . | SDMMC Driver to communicate to SD Card | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#description",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#description"
+  },"57": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/sdmmc_fat_throughput/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#downloading-and-building-the-application"
+  },"58": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . | To run the demo, the following additional hardware are required: . | One micro-sd card . | The SD Card should have atleast 10MB of free space for the demo to work | . | . | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-the-hardware"
+  },"59": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Running the Application",
+    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and program the application using its IDE . | Following message is output on console: . | Insert the SD Card in the SD Card slot of the Device | The LED is turned ON if there was no error during the file operations . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED1 | . |   |   | . | Calculated throughput values for Aligned and Un-Aligned buffers are dispalyed on console as below: . | Note: The Values showed in the below output may differ slightly when demo is run | . | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#running-the-application",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#running-the-application"
+  },"60": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Additional Steps (Optional)",
+    "content": "To increase the throughput for the Un-aligned buffers you can follow below steps . | Update the app.c file to place the application buffer in non cacheable space using __COHERENT attribute or CACHE_ALIGN macro as below uint8_t CACHE_ALIGN __ALIGNED(CACHE_LINE_SIZE) dataBuffer[BUFFER_SIZE + 1]; | . OR . | Launch MHC for the project | Increase the size for the internal aligned buffer used by Filesystem service with some value as shown below. This internal buffer will be used when application buffer is Un-aligned and placed in cacheable region. | Note: Increasing the size of the aligned buffer will consume more RAM | . | Regenerate the project | Once done repeat the steps mentioned in Running The Application and observe the change in throughput for Un-aligned buffer | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html#additional-steps-optional",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#additional-steps-optional"
+  },"61": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "FAT filesystem throughput using SDMMC Media",
+    "content": ". ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html"
+  },"62": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "FAT filesystem using SST26 Media",
     "content": "This application shows an example of using the MPLAB Harmony File System to access SQI based SST26 flash media . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html#fat-filesystem-using-sst26-media",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#fat-filesystem-using-sst26-media"
-  },"56": {
+  },"63": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "Description",
     "content": "File System Operations on the On-Board SST26 Flash Memory: . | Performs a SYS_FS_FormatDisk | Opens a newfile.txt on the SST26 flash | Write and reads back 4KB of data on newfile.txt | Verifies the Data Read back | . File system layer uses: . | One instance of the Memory driver is used to communicate with the On-Board SQI Flash memory | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html#description",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#description"
-  },"57": {
+  },"64": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/sqi_flash_fat/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#downloading-and-building-the-application"
-  },"58": {
+  },"65": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#setting-up-the-hardware"
-  },"59": {
+  },"66": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | The LED is turned ON if data has successfully been written and read back from file “newfile.txt” | . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED3 | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html#running-the-application",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#running-the-application"
-  },"60": {
+  },"67": {
     "doc": "FAT filesystem using SST26 Media",
     "title": "FAT filesystem using SST26 Media",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html"
-  },"61": {
+  },"68": {
     "doc": "FreeRTOS basic",
     "title": "FreeRTOS basic",
-    "content": "This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status. ",
+    "content": "This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html#freertos-basic",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#freertos-basic"
-  },"62": {
+  },"69": {
     "doc": "FreeRTOS basic",
     "title": "Description",
-    "content": "This demonstration creates three tasks and a queue. Task1 sends message to Task2 and Task3 to unblock and toggle an LED. Task1 priority is low compared to Task2 and Task3 which shares same priority. | Task1: This task sends the data (i.e. delay, the amount of time for which the task need blocked) to Task2 and Task3 using a queue, then Task1 blocks itself for 200ms to allow other tasks to schedule and run | Task2: This task blocks until it receives the data from queue, if the Task2 receives the expected delay (i.e. 1000ms) from Task1 then toggles the LED and blocks itself for the amount of delay received | Task3: This task blocks until it receives the data from queue, if the Task3 receives the expected delay (i.e. 100ms) from Task1 then toggles the LED and blocks itself for the amount of delay received | . ",
+    "content": "This demonstration creates four tasks each of differen priority. Task1 has the lowest priority, followed by Task2, Task3 and Task4 which has the highest priority. Task1 and Task2 run periodically. Task3 blocks until a character is received on UART terminal. Task3 registers a read callback with the UART PLIB and blcoks on a UART receive semaphore. The semaphore is given from the registered callback which is called when a character is receved on the terminal. Task4 blocks until a user switch is pressed. Task4 registers a change notification callback for the switch press event with the GPIO peripheral and then blocks on the switch press semaphore. The semaphore is given from the registered callback which is called when the switch is pressed. All the tasks print messages on the UART terminal to indicate tasks entry/exit. Since all the tasks use the same UART peripheral library, a mutex is used to guard the shared resource (UART ring buffer). | Task1: Task1 is configured for priority 1 (lowest of all the application tasks). The task1 runs for about 100 ticks and then blocks for 10 milliseconds. Each time task1 is run, it prints a message on the UART console “Tsk1-P1 &lt;-“ where, the &lt;- symbol indicates that task1 is running. Just before blocking it prints another message on the UART console “Tsk1-P1 -&gt;” where, the -&gt; symbol indicates that task1 is about to put itself into a blocked state. | Task2: Task2 is configured for priority 2. The task2 runs for about 10 ticks and then blocks for 250 milliseconds. Each time task2 is run, it prints a message on the UART console “Tsk2-P2 &lt;-“ where, the &lt;- symbol indicates that task2 is running. Just before blocking it prints another message on the UART console “Tsk2-P2 -&gt;” where, the -&gt; symbol indicates that task2 is about to put itself into a blocked state. | Task3: Task3 is configured for priority 3. It remains blocked on a semaphore which is released when a character is entered on the UART console. Once active, the task reads out the received characters and toggles LED if letter ‘L’ or ‘l’ is pressed. The task then runs for about 50 ticks, before again blocking itself until a new character is received. Each time task3 is run, it prints a message on the UART console “Tsk3-P3 &lt;-“ where, the &lt;- symbol indicates that task2 is running. Just before blocking it prints another message on the UART console “Tsk3-P3 -&gt;” where, the -&gt; symbol indicates that task3 is about to put itself into a blocked state. | Task4: Task4 is configured for priority 4 (highest of all the application tasks). It remains blocked on a semaphore which is released when a user switch is pressed. Once active, the task runs for about 10 ticks, before again blocking itself until the switch is pressed again. Each time task4 is run, it prints a message on the UART console “Tsk4-P4 &lt;-“ where, the &lt;- symbol indicates that task4 is running. Just before blocking it prints another message on the UART console “Tsk4-P4 -&gt;” where, the -&gt; symbol indicates that task4 is about to put itself into a blocked state. | . The following figure shows possible context switching between the tasks. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html#description",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#description"
-  },"63": {
+  },"70": {
     "doc": "FreeRTOS basic",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rtos/freertos/basic_freertos/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_dag_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#downloading-and-building-the-application"
-  },"64": {
+  },"71": {
     "doc": "FreeRTOS basic",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_dag_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_dag_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#setting-up-the-hardware"
-  },"65": {
+  },"72": {
     "doc": "FreeRTOS basic",
     "title": "Running the Application",
-    "content": ". | Build and program the application using its IDE | The LED indicates the success or failure. | The LED toggles on success i.e. each time when the Task2 or Task3 receives a valid message | . | . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | LED1 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED1 | . |   |   | . ",
+    "content": ". | Open the Terminal application (Ex.:Tera Term) on the computer. | Configure the serial port settings as follows: . Baud : 115200 . Data : 8 Bits . Parity : None . Stop : 1 Bit . Flow Control : None . | Build and program the application using its IDE. | Observe the following output on the terminal. | Enter any character on the terminal to run task3. Notice how task1 and task2 are pre-empted by task3 as task3 is of higher priority than task1 and task2. Pressing character ‘l’ or “L’ toggles the on board LED. Notice how task1 and task2 are not run when characters are entered continuously on the terminal. | Press the user switch on the board to run task4. Notice how task4 preempts all other tasks as it is of highest priority. | . Refer to the following table for LED and Switch name: . | Board | LED Name | Switch Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | LED1 | SW1 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED1 | SW1 | . |   |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html#running-the-application",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#running-the-application"
-  },"66": {
+  },"73": {
     "doc": "FreeRTOS basic",
     "title": "FreeRTOS basic",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html"
-  },"67": {
+  },"74": {
     "doc": "FreeRTOS Task Notification",
     "title": "FreeRTOS Task Notification",
     "content": "This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html#freertos-task-notification",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#freertos-task-notification"
-  },"68": {
+  },"75": {
     "doc": "FreeRTOS Task Notification",
     "title": "Description",
     "content": ". | This demonstration creates two tasks that send notifications back and forth to each other. | Task2 blocks to wait for Task1 to notify and will be blocked for 500ms | Task1 sends a notification to Tasks2, bringing it out of the blocked state, toggles an LED | Task1 blocks to wait for Task2 to notify | Task2 sends notification to Task1, bringing it out of the blocked state | . | Above steps will be repeated. i.e. an LED toggles for every 500ms | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html#description",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#description"
-  },"69": {
+  },"76": {
     "doc": "FreeRTOS Task Notification",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rtos/freertos/task_notification_freertos/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#downloading-and-building-the-application"
-  },"70": {
+  },"77": {
     "doc": "FreeRTOS Task Notification",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-the-hardware"
-  },"71": {
+  },"78": {
     "doc": "FreeRTOS Task Notification",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | The LED toggles on success for every 500ms | . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html#running-the-application",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#running-the-application"
-  },"72": {
+  },"79": {
     "doc": "FreeRTOS Task Notification",
     "title": "FreeRTOS Task Notification",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html"
-  },"73": {
+  },"80": {
     "doc": "Console Debug System Service using UART",
     "title": "Console Debug System Service using UART",
     "content": "This example application demonstrates the UART based console and debug system service. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#console-debug-system-service-using-uart",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#console-debug-system-service-using-uart"
-  },"74": {
+  },"81": {
     "doc": "Console Debug System Service using UART",
     "title": "Description",
     "content": ". | The application example first demonstrates the various debug system service macros | It then demonstrates the console related APIs | The application asks the user to enter a character on the console which is echoed back using the console system service read/write APIs | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#description",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#description"
-  },"75": {
+  },"82": {
     "doc": "Console Debug System Service using UART",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/system/console_debug/sys_console_debug_uart_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_daa_sk.X | MPLABX project for PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit | . | pic32mz_dag_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#downloading-and-building-the-application"
-  },"76": {
+  },"83": {
     "doc": "Console Debug System Service using UART",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_daa_sk.X | PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit | . | pic32mz_dag_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#setting-up-the-hardware"
-  },"77": {
+  },"84": {
     "doc": "Console Debug System Service using UART",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application using its IDE | Observe the following output on the terminal . | First few prints demonstrate the output from the debug system service APIs | It then prints the free space available in the receive buffer | It then asks the user to enter 10 characters | . | After entering 10 characters, observe the following output on the terminal . | The output first prints the free space available in the receive buffer | Since 10 characters are pending to be read out from the receive buffer, the free space in the receive buffer is reduced by 10 | After this, it prints the received characters on the terminal | Application then waits for the transmit buffer to become empty | Once empty, the application prints the free space available in the transmit buffer, which should be same as the size of the transmit buffer configured in MHC minus 1 | . | After this, the demonstration asks the user to enter a character, and echoes it back on the terminal. | LED toggles every-time the character is printed on the terminal | . | . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit | LED1 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | LED1 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#running-the-application",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html#running-the-application"
-  },"78": {
+  },"85": {
     "doc": "Console Debug System Service using UART",
     "title": "Console Debug System Service using UART",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html",
     "relUrl": "/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html"
-  },"79": {
+  },"86": {
     "doc": "Console Debug System Service using USB",
     "title": "Console Debug System Service using USB",
     "content": "This example application demonstrates the USB based console and debug system service. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#console-debug-system-service-using-usb",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#console-debug-system-service-using-usb"
-  },"80": {
+  },"87": {
     "doc": "Console Debug System Service using USB",
     "title": "Description",
     "content": ". | The application example demonstrates console and debug system service using two instances of console, each connected to an instance of the USB CDC function driver | These will appear as two COM ports on the host PC | The example first demonstrates the various debug system service APIs/macros. | It then demonstrates the console related APIs. | The application asks the user to enter a character on one console which is echoed back on the second console (and vice-versa), using the console system service read/write APIs. | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#description",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#description"
-  },"81": {
+  },"88": {
     "doc": "Console Debug System Service using USB",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/system/console_debug/sys_console_debug_usb_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#downloading-and-building-the-application"
-  },"82": {
+  },"89": {
     "doc": "Console Debug System Service using USB",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | Use the micro-A/B port J6 (which is located on the bottom side of the board) to connect the USB Device to the the USB Host PC | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#setting-up-the-hardware"
-  },"83": {
+  },"90": {
     "doc": "Console Debug System Service using USB",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | Attach the device to the host. If the host is a personal computer and this is the first time you have plugged this device into the computer, you may be prompted for a .inf file. | Select the “Install from a list or specific location (Advanced)” option. Specify the &lt;install-dir&gt;/core_apps_pic32mz_ef/apps/system/console_debug/sys_console_debug_usb_read_write/inf directory. | . Note: . | As an option, to specify the driver, you may open the device manager and expand the Ports (COM &amp; LPT) tab, and right click on “Update Driver Software…” . | Verify that the enumerated USB device is seen as a virtual USB serial comport in Device Manager. | . | Once the device is successfully installed, open up two instances of a terminal program, such as Tera Term. Select the appropriate COM port for each of these terminal instances. The following screen shot shows the COM port selection for the Tera Term terminal program. | Once the USB is enumerated . | The LED on the demonstration board will be turned on. | Press the swtich on the development board and observe the following output on the terminals | The output on the console instance 0 prints the messages using the debug system service | It then prints the size of the receive buffer and asks the user to enter 10 characters on the terminal | . | Once, 10 characters are entered on console instance 0 . | The demonstration prints the free space available in the receive and transmit buffers | Since the receive buffer contains 10 unread characters, its free space will be reduced by 10 | The received characters are read and echoed on the terminal | After this, the demonstration enters in echo test mode, where a character entered on console instance 0 will be echoed on console instance 1 and vice-versa | . | Enter a character on console instance 0 terminal and observe it getting echoed on console instance 1 terminal and vice-versa . | . Refer to the following table for switch and LED name: . | Board | Switch name | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | SW1 | LED1 | . |   |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#running-the-application",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html#running-the-application"
-  },"84": {
+  },"91": {
     "doc": "Console Debug System Service using USB",
     "title": "Console Debug System Service using USB",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html",
     "relUrl": "/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html"
-  },"85": {
+  },"92": {
     "doc": "Time System Service multi-client",
     "title": "Time System Service multi-client",
     "content": "This example application demonstrates the multi-client system timer functionality . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html#time-system-service-multi-client",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#time-system-service-multi-client"
-  },"86": {
+  },"93": {
     "doc": "Time System Service multi-client",
     "title": "Description",
     "content": ". | This application demonstrates timer functionality (with two clients to the Time System Service) by periodically printing a message on console every two seconds and blinking an LED every one second . | Delay, counter and single shot timer functionality is demonstrated on a switch press . | On a switch press, the application reads the current value of the 64 bit counter (say, count 1) | It then starts a delay of 500 milliseconds and waits for the delay to expire | Once the delay has expired, the application again reads the current value of the 64 bit counter (say, count 2) and calculates the difference between the two counter values . | The difference count indicates the time spent for the delay and is printed on the console as, “Delay time = x ms”, where x is the delay value and is equal to 500 milliseconds in the given example . | The application then starts a single shot timer of 100 milliseconds | When the single shot timer expires, a message is printed on the console that says “Single shot timer of 100 ms expired” | This message is printed only once on every switch press | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html#description",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#description"
-  },"87": {
+  },"94": {
     "doc": "Time System Service multi-client",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/system/time/sys_time_multiclient/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_dag_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#downloading-and-building-the-application"
-  },"88": {
+  },"95": {
     "doc": "Time System Service multi-client",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_dag_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | . | pic32mz_das_sk.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect a micro USB cable to the USART-USB port J5 | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#setting-up-the-hardware"
-  },"89": {
+  },"96": {
     "doc": "Time System Service multi-client",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application using its IDE | Observe the following message getting printed on the console every two seconds . | Press the switch and observe the following output on the terminal (highlighted in red box) . | “Delay time = 500 ms” indicates the amount of time spent during the delay | “Single shot timer of 100 ms expired” is printed only once on every switch press | . | LED indicates the periodic timer functionality . | LED is toggled periodically every one second | . | . Refer to the following table for switch and LED name: . | Board | Switch name | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | SW1 | LED1 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | SW1 | LED1 | . |   |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html#running-the-application",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#running-the-application"
-  },"90": {
+  },"97": {
     "doc": "Time System Service multi-client",
     "title": "Time System Service multi-client",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html"
-  },"91": {
+  },"98": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Memory driver asynchronous - NVM SST26 Read Write",
     "content": "This example application shows how to use the Memory driver in asynchronous mode to perform block operations on the NVM and the SST26 media’s. ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html#memory-driver-asynchronous---nvm-sst26-read-write",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html#memory-driver-asynchronous---nvm-sst26-read-write"
-  },"92": {
+  },"99": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Description",
     "content": "This application: . | Uses multi instances of the Memory driver to communicate with the NVM and the SST26 Flash memories in asynchronous mode of operation in Bare-Metal environment . | Performs block Erase/Write/Read operations on both the media’s . | Consists of five tasks which are called through the SYS_Tasks() routine in Bare-Metal environment . | DRV_MEMORY_0_Tasks(): . | Manages the state machine of the Memory driver instance 0 | . | DRV_MEMORY_1_Tasks(): . | Manages the state machine of the Memory driver instance 1 | . | APP_SST26_Tasks(): . | Performs operations on the SST26 QSPI/SQI Flash memory | . | APP_NVM_Tasks(): . | Performs operations on the NVM | . | APP_MONITOR_Tasks(): . | Monitors the state of above two Tasks | . | . | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html#description",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html#description"
-  },"93": {
+  },"100": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/driver/memory/async/nvm_sst26_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_das_sk_freertos.X | MPLABX project for PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html#downloading-and-building-the-application"
-  },"94": {
+  },"101": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_das_sk_freertos.X | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | . |   |   | . Setting up PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html#setting-up-the-hardware"
-  },"95": {
+  },"102": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | The LED is turned ON when the data read from each media matches with the data written in them | . Refer to the following table for LED name: . | Board | LED Name | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | LED3 | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html#running-the-application",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html#running-the-application"
-  },"96": {
+  },"103": {
     "doc": "Memory driver asynchronous - NVM SST26 Read Write",
     "title": "Memory driver asynchronous - NVM SST26 Read Write",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html",
     "relUrl": "/apps/driver/memory/async/nvm_sst26_read_write/readme.html"
-  },"97": {
+  },"104": {
     "doc": "Release notes",
     "title": "Microchip MPLAB® Harmony 3 Release Notes",
     "content": " ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html#microchip-mplab-harmony-3-release-notes",
     "relUrl": "/release_notes.html#microchip-mplab-harmony-3-release-notes"
-  },"98": {
+  },"105": {
+    "doc": "Release notes",
+    "title": "Harmony 3 peripheral library application examples for PIC32MZ DA family  v3.1.0",
+    "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | 17 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | 9 | . | PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit | 2 | . New Features . | None | . Known Issues . | None | . Development Tools . | MPLAB® X IDE v5.45 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.7.0 | . | MPLAB® XC32 C/C++ Compiler v2.50 | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-da-family--v310",
+    "relUrl": "/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-da-family--v310"
+  },"106": {
+    "doc": "Release notes",
+    "title": "Harmony 3 driver and system service application examples for PIC32MZ DA family  v3.0.1",
+    "content": "New Features . | Added discover.microchip.com metadata | . Bug fixes . | Same as v3.0.0 | . Known Issues . | Same as v3.0.0 | . Development Tools . | Same as v3.0.0 | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v301",
+    "relUrl": "/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v301"
+  },"107": {
+    "doc": "Release notes",
+    "title": "Harmony 3 driver and system service application examples for PIC32MZ DA family  v3.0.1",
+    "content": ". | Updated apps/driver/memory/async/nvm_sst26_read_write application | . New Features . | N/A | . Known Issues . | None | . Development Tools . | No changes from v3.0.0 | . ",
+    "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v301-1",
+    "relUrl": "/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v301-1"
+  },"108": {
     "doc": "Release notes",
     "title": "Harmony 3 driver and system service application examples for PIC32MZ DA family  v3.0.0",
     "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | . | PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit | 2 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit | 9 | . | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | 16 | . New Features . New features added in this release are as follows: . | Applications migrated from csp repository to this new application repository for PIC32MZ DA development boards | . Known Issues . The current known issues are as follows: . | None | . Development Tools . | MPLAB® X IDE v5.40 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.6.0 | . | MPLAB® XC32 C/C++ Compiler v2.41 | . ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v300",
     "relUrl": "/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-pic32mz-da-family--v300"
-  },"99": {
+  },"109": {
     "doc": "Release notes",
     "title": "Release notes",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/release_notes.html",
     "relUrl": "/release_notes.html"
-  },"100": {
+  },"110": {
     "doc": "Harmony 3 driver and system service application examples for PIC32MZ DA family",
     "title": "Harmony 3 driver and system service application examples for PIC32MZ DA family",
-    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 driver and system service application examples for PIC32MZ DA family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 driver and system service application examples for PIC32MZ DA family - [Release Notes](/core_apps_pic32mz_da/release_notes.html) - [MPLAB® Harmony License](/core_apps_pic32mz_da/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains driver and system service example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/core_apps_pic32mz_da/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [Memory driver asynchronous - NVM SST26 Read Write ](/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html) | This example application shows how to use the Memory driver in asynchronous mode to perform block operations on the NVM and the SST26 media's | [SDMMC driver asynchronous - SDMMC Read Write](/core_apps_pic32mz_da/apps/driver/sdmmc/async/sdmmc_read_write/readme.html) | This example application shows how to use the SDMMC driver in asynchronous mode to perform block operations on the SD Card Media | [SPI Driver asynchronous - Self loopback multi client](/core_apps_pic32mz_da/apps/driver/spi/async/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients | [SPI Driver synchronous - Self loopback multi client](/core_apps_pic32mz_da/apps/driver/spi/sync/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment | [USART driver asynchronous - USART echo](/core_apps_pic32mz_da/apps/driver/usart/async/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in asynchronous mode | [USART driver synchronous - USART echo](/core_apps_pic32mz_da/apps/driver/usart/sync/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in synchronous mode | [FAT filesystem using NVM Media](/core_apps_pic32mz_da/apps/fs/nvm_fat/readme.html) | This application shows an example of implementing a FAT disk in the device internal Flash memory | [MPFS filesystem using NVM Media](/core_apps_pic32mz_da/apps/fs/nvm_mpfs/readme.html) | This application shows an example of implementing a MPFS disk in device Internal Flash memory | [FAT filesystem using NVM and SST26 Media](/core_apps_pic32mz_da/apps/fs/nvm_sqi_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access multiple files across multiple media (NVM, SQI FLASH) | [FAT filesystem using SDMMC Media](/core_apps_pic32mz_da/apps/fs/sdmmc_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver | [FAT filesystem using SST26 Media](/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access SQI based SST26 flash media | [FreeRTOS basic](/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html) | This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status | [FreeRTOS Task Notification](/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore | [Console Debug System Service using UART](/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html) | This example application demonstrates the UART based console and debug system service | [Console Debug System Service using USB](/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html) | This example application demonstrates the USB based console and debug system service | [Time System Service multi-client](/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html) | This example application demonstrates the multi-client system timer functionality | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg?style=social)]() ",
+    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 driver and system service application examples for PIC32MZ DA family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 driver and system service application examples for PIC32MZ DA family - [Release Notes](/core_apps_pic32mz_da/release_notes.html) - [MPLAB® Harmony License](/core_apps_pic32mz_da/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains driver and system service example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/core_apps_pic32mz_da/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [Memory driver asynchronous - NVM SST26 Read Write ](/core_apps_pic32mz_da/apps/driver/memory/async/nvm_sst26_read_write/readme.html) | This example application shows how to use the Memory driver in asynchronous mode to perform block operations on the NVM and the SST26 media's | [SDMMC driver asynchronous - SDMMC Read Write](/core_apps_pic32mz_da/apps/driver/sdmmc/async/sdmmc_read_write/readme.html) | This example application shows how to use the SDMMC driver in asynchronous mode to perform block operations on the SD Card Media | [SPI Driver asynchronous - Self loopback multi client](/core_apps_pic32mz_da/apps/driver/spi/async/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients | [SPI Driver synchronous - Self loopback multi client](/core_apps_pic32mz_da/apps/driver/spi/sync/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment | [USART driver asynchronous - USART echo](/core_apps_pic32mz_da/apps/driver/usart/async/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in asynchronous mode | [USART driver synchronous - USART echo](/core_apps_pic32mz_da/apps/driver/usart/sync/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in synchronous mode | [FAT filesystem using NVM Media](/core_apps_pic32mz_da/apps/fs/nvm_fat/readme.html) | This application shows an example of implementing a FAT disk in the device internal Flash memory | [MPFS filesystem using NVM Media](/core_apps_pic32mz_da/apps/fs/nvm_mpfs/readme.html) | This application shows an example of implementing a MPFS disk in device Internal Flash memory | [FAT filesystem using NVM and SST26 Media](/core_apps_pic32mz_da/apps/fs/nvm_sqi_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access multiple files across multiple media (NVM, SQI FLASH) | [FAT filesystem using SDMMC Media](/core_apps_pic32mz_da/apps/fs/sdmmc_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver | [FAT filesystem throughput using SDMMC Media](/core_apps_pic32mz_da/apps/fs/sdmmc_fat_throughput/readme.html) | This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver | [FAT filesystem using SST26 Media](/core_apps_pic32mz_da/apps/fs/sqi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access SQI based SST26 flash media | [FreeRTOS basic](/core_apps_pic32mz_da/apps/rtos/freertos/basic_freertos/readme.html) | This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven | [FreeRTOS Task Notification](/core_apps_pic32mz_da/apps/rtos/freertos/task_notification_freertos/readme.html) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore | [Console Debug System Service using UART](/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_uart_read_write/readme.html) | This example application demonstrates the UART based console and debug system service | [Console Debug System Service using USB](/core_apps_pic32mz_da/apps/system/console_debug/sys_console_debug_usb_read_write/readme.html) | This example application demonstrates the USB based console and debug system service | [Time System Service multi-client](/core_apps_pic32mz_da/apps/system/time/sys_time_multiclient/readme.html) | This example application demonstrates the multi-client system timer functionality | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32mz_da/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_pic32mz_da.svg?style=social)]() ",
     "url": "http://localhost:4000/core_apps_pic32mz_da/",
     "relUrl": "/"
   }

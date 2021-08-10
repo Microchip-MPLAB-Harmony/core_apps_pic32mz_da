@@ -4448,14 +4448,14 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_spi_0, value: 'false'}
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: DMA_CH_NEEDED_FOR_SPI2_Transmit}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_spi_0, value: 'false'}
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: EVIC_119_ENABLE}
     children:
@@ -4616,7 +4616,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: FreeRTOS, value: 'true'}
+        attributes: {id: core, value: 'true'}
   - type: Boolean
     attributes: {id: EVIC_4_ENABLE_GENERATE}
     children:

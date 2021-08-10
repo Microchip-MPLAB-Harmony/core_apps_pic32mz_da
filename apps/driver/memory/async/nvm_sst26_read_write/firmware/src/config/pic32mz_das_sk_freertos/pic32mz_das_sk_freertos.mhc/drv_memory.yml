@@ -93,6 +93,10 @@ children:
             children:
             - {type: Value, value: '*** Configure Memory Device in DRV_SST26 Configurations
                 ***'}
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
       - type: Integer
         attributes: {id: DRV_MEMORY_DEVICE_POLL_US}
         children:
@@ -184,6 +188,10 @@ children:
             children:
             - {type: Value, value: '*** Configure Memory Device in NVM Configurations
                 ***'}
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
       - type: Integer
         attributes: {id: DRV_MEMORY_DEVICE_POLL_US}
         children:
@@ -219,6 +227,10 @@ children:
         children:
         - type: Attributes
           children:
+          - type: Boolean
+            attributes: {id: enabled}
+            children:
+            - {type: Value, value: 'true'}
           - type: String
             attributes: {id: name}
             children:
@@ -228,10 +240,23 @@ children:
         children:
         - type: Attributes
           children:
+          - type: Boolean
+            attributes: {id: enabled}
+            children:
+            - {type: Value, value: 'true'}
           - type: String
             attributes: {id: name}
             children:
             - {type: Value, value: drv_memory_nvm.c}
+      - type: File
+        attributes: {id: DRV_MEMORY_PLIB_SYS_DEF}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: enabled}
+            children:
+            - {type: Value, value: 'true'}
       - type: Menu
         attributes: {id: DRV_MEMORY_RTOS_MENU}
         children:

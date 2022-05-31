@@ -1,4 +1,4 @@
-<config configName="pic32mz_dag_sk" projectName="spi_self_loopback_multi_client_pic32mz_dag_sk" configVersion="1.1" device="PIC32MZ2064DAG169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.3">
+<config configName="pic32mz_dag_sk" projectName="spi_self_loopback_multi_client_pic32mz_dag_sk" configVersion="1.1" device="PIC32MZ2064DAG169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -31,7 +31,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -10913,7 +10913,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\system\dma\sys_dma.c</file>
@@ -10941,7 +10941,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\initialization.c</file>
-         <hash>9e64181d682c68711d3b8d91a3e31c28f5eb66548db976efb5f894ac0ebc7e69</hash>
+         <hash>d91d3b2fc94f8277107cf8dc34302c199faad30b2048ccf185e9e1a7c5cacaff</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\peripheral\evic\plib_evic.h</file>
@@ -10957,7 +10957,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\peripheral\evic\plib_evic.c</file>
-         <hash>8fe796ea0da81dc429628f042d108e9d8bb6278dbede1b1836d99370d5c29d53</hash>
+         <hash>8b097b86f25dd24ea2bf58cb75ec83e4cd4e91c1b373068511b31be392898508</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\exceptions.c</file>
@@ -11005,7 +11005,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>6dd5f97ce10188bcf79bdda143521bae6260636ad06339cec8843b840d714550</hash>
+         <hash>8618856d4ae2b1d0156aab9b53ac3802615f4c426cda4ee2cbc00225f83b8606</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\user.h</file>
@@ -11021,7 +11021,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\bsp\bsp.h</file>
-         <hash>b618109d3dad143de7f124ab0221c11e96d8a799a527477ec546c075030a0d66</hash>
+         <hash>b5fbb3d063cb539292b273d99ac81f7fa470acfde7f5f495f4cedb83006cad17</hash>
       </entry>
       <entry>
          <file>..\src\app_client2.c</file>
@@ -11029,7 +11029,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\peripheral\gpio\plib_gpio.h</file>
-         <hash>cc3bde74ba75a1c62eb7a1e5ec84c60926956a7783f71c3d7038143b09c06e63</hash>
+         <hash>949bcb286e4d59e6f2d9187c39a8e3eb9c5562558536463c1ed0c098f806321d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\tasks.c</file>
@@ -11057,15 +11057,15 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\driver\spi\drv_spi.h</file>
-         <hash>dfd0f628815dc935e8594112dc1a2acb17e9e2c50bf847744e1d54398768b274</hash>
+         <hash>aed15b9971d20ddad5624af0d417eccb3d9acf31326b0d9ededffabb34c3ed15</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\driver\spi\src\drv_spi.c</file>
-         <hash>de2b4a6948d74a1e54d288ad5808e2457298c91d97420be5334ac2ede46b9598</hash>
+         <hash>4dc38baff274ad82a807212ec783bafeb674f725fee0e9c90f823037a1e6c08c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\system\debug\sys_debug.h</file>
-         <hash>970de73fb9806906b5429168c66ab403309d8a9cad46febab875a5e6d071525e</hash>
+         <hash>16fbc4bbf026e4713e9b835b1511411e053aaf92ab7d6a000638630576fe92b3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\interrupts.h</file>
@@ -11077,7 +11077,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\driver\spi\drv_spi_definitions.h</file>
-         <hash>adf812acf0aa56dac0f803a4755e018a49f659571109670cfe0d3b20087acdd1</hash>
+         <hash>4af3642c3b9f007bb5b461a3d3c8c348efc6e69875439594c4b67d7a7751212d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\peripheral\spi\spi_master\plib_spi2_master.h</file>
@@ -11089,7 +11089,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_dag_sk\toolchain_specifics.h</file>
-         <hash>5a13891d073d2ad5773c0c59ebe34074f2373103d565643f9e36a3b792feae9c</hash>
+         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>

@@ -1,4 +1,4 @@
-<config configName="pic32mz_das_sk" projectName="sdmmc_fat_throughput_pic32mz_das_sk" configVersion="1.1" device="PIC32MZ2064DAS169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.3">
+<config configName="pic32mz_das_sk" projectName="sdmmc_fat_throughput_pic32mz_das_sk" configVersion="1.1" device="PIC32MZ2064DAS169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -51,7 +51,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -6742,19 +6742,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="uart2" name="UART_BRGH_MODE_COMMENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;uart2&gt;
-  &lt;uart2 dnOrder=&quot;0&quot; id=&quot;UART_BRGH_MODE_COMMENT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;text&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;***&amp;amp;#160;High&amp;amp;#160;Speed&amp;amp;#160;mode&amp;amp;#160;4x&amp;amp;#160;baud&amp;amp;#160;clock&amp;amp;#160;enabled&amp;amp;#160;(BRGH&amp;amp;#160;=&amp;amp;#160;1)&amp;amp;#160;***&lt;/Value&gt;
-      &lt;/String&gt;
-    &lt;/Attributes&gt;
-  &lt;/uart2&gt;
-&lt;/uart2&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="uart2" name="UART_CLOCK_FREQ"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;uart2&gt;
   &lt;uart2 dnOrder=&quot;0&quot; id=&quot;UART_CLOCK_FREQ&quot;&gt;
@@ -6818,7 +6805,7 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\uart\plib_uart2.c</file>
-         <hash>2d6d325e3e8c9f0edd7ebb50777ee6241a7351d16d5d3bfe281f95478eff4a9a</hash>
+         <hash>ea74624a968ca355b7dbb20b0ac95ae4c40a3ba0c2216b660fe1686faaced62d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\exceptions.c</file>
@@ -6838,7 +6825,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\uart\plib_uart2.h</file>
-         <hash>46fe38ce181ecbacd00b991479fdc1475e31bd5e2c0f2bb3390e6c4b20501f47</hash>
+         <hash>f3c4a839850aea39e57412278446606debcc73e4365aa7655501100673013fa8</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\initialization.c</file>
@@ -6886,11 +6873,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>f3f132c596f1cc629af13192945b4e3efdf27fb5438a9103b8a49e0b9cbd4d8a</hash>
+         <hash>37347a1c32cd415861cd14e1f81def33a78d22eb94d5fcfcea6611a81ac89f92</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.h</file>
-         <hash>52337e64d944c61a5a09e16b51ac7b323a547aa3d4039397c1718c579d226b1f</hash>
+         <hash>df6d121e8464522528a5a7b03eae4bc3436ee5ed9c9af4ad80563bdecd26dc8e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\fat_fs\hardware_access\diskio.h</file>
@@ -6906,7 +6893,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\sys_fs_media_manager.h</file>
-         <hash>6cb6bdb605ca6e8b9e683671cffadbbc26a1f686e3eaedc74a6cba860e8ac3c4</hash>
+         <hash>29bda64831783de33b10c3841e1eb703dc9f5b04287c1e26af8f3b75b7197b39</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\driver\sdmmc\src\drv_sdmmc.c</file>
@@ -6914,7 +6901,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\debug\sys_debug.h</file>
-         <hash>970de73fb9806906b5429168c66ab403309d8a9cad46febab875a5e6d071525e</hash>
+         <hash>16fbc4bbf026e4713e9b835b1511411e053aaf92ab7d6a000638630576fe92b3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\coretimer\plib_coretimer.h</file>
@@ -6938,7 +6925,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\stdio\xc32_monitor.c</file>
-         <hash>1957d0040510756cd6a999d6f160cb685fee9aa800c832cfb8f5570b11b3e22b</hash>
+         <hash>02b7c5343c9797c6ffb7d442e0b10098bcfb84deb476c7ceacf79787713ebeca</hash>
       </entry>
       <entry>
          <file>..\src\app.c</file>
@@ -6946,7 +6933,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\src\sys_fs.c</file>
-         <hash>25d27349ac93f74a60186c235b8b1d7f6a4c25c53c97642f0df93109a2a6241d</hash>
+         <hash>aba5ae4d2d52843de0d236941838bd3ff6428f6acade1fb5ef923b2aa7615968</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\sdhc\plib_sdhc.c</file>
@@ -6962,7 +6949,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\driver\sdmmc\src\drv_sdmmc_local.h</file>
-         <hash>ae775acfc3c3acc0572bb010773b396ae164311e547299cc0f5098a430e37381</hash>
+         <hash>6636f9435b8e6db473bd22410b84550ca0ac22283da3480bc292b1a9a6ef03d3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\cache\plib_cache_local.h</file>
@@ -6970,11 +6957,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\time\src\sys_time_local.h</file>
-         <hash>a761ad68ce0cbac8c326bd17e54cc01d10324ed8d5e120ef092856a21604b6a2</hash>
+         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\configuration.h</file>
-         <hash>8e060b7df5dea690521815e4c167dfd130ef94fb0636950444ac1a4e58464b33</hash>
+         <hash>950bfb8530cd5c83523c638cd585e7f5666438f41284a70caeb1be54a863324d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\cache\plib_cache_pic32mz.S</file>
@@ -6994,19 +6981,19 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\fat_fs\file_system\ff.c</file>
-         <hash>89210dcb75cae2c2c9cf5e835ccd0b5a8dd5860ac9f79661207076b9a4d709e0</hash>
+         <hash>ef75bad24073ec54d3e76b06b26c56b604bb4f063fe6bd9ebe7c80bae94fd6d5</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\fat_fs\file_system\ff.h</file>
-         <hash>910fa58ceb264c7e03edce224b6484fc2fba3c8d6656975e3c01cd45cdc5d4b3</hash>
+         <hash>d7b45a8f01fcd9923e18f8618408613021f2d36f35c632de31edaf5f4acf6c6b</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\toolchain_specifics.h</file>
-         <hash>5a13891d073d2ad5773c0c59ebe34074f2373103d565643f9e36a3b792feae9c</hash>
+         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\fat_fs\file_system\ffconf.h</file>
-         <hash>8f1f7779dc16a7bd079a602581b243349faf4ee755b799656fac84133fd01cac</hash>
+         <hash>929a8f7ab79ee4a0f97c48ed2ad9c950761e850ee4c97858d86ab72ffa5e0f10</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\cache\plib_cache_pic32mz.h</file>
@@ -7082,7 +7069,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\sys_fs.h</file>
-         <hash>46a5946f727b22530f0e0945a33cad93077c7b92c1bb2811959709ba7be60e9c</hash>
+         <hash>f6b88c65147de18477aefc67aef580fe328c2cfdaa3617cc757c10e84092b346</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\cache\plib_cache.c</file>
@@ -7094,11 +7081,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\driver\sdmmc\drv_sdmmc.h</file>
-         <hash>adfd11fa4fb647cbc17073c5e43c29875b46cef63c016b655ef8d6bed9d514e2</hash>
+         <hash>7521b2ccf0bf9505fa4180aa436c0bdf91511c8db534011ec2f3769fcc02cb76</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\evic\plib_evic.c</file>
-         <hash>2ef09459d529c97b3d5861f78e95e2bef2887d367c6a48d42a3ffcdb15fb0107</hash>
+         <hash>810c7db87929fd5303bfe77b6c328c08564ba2dad1e1ff1ebf5ffc88cdc830f0</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\fs\src\sys_fs_media_manager.c</file>
@@ -7110,11 +7097,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\time\src\sys_time.c</file>
-         <hash>ddec1a83e32b63552ae72f884dc849e376b60d411669554f7ec492fff180662f</hash>
+         <hash>4c2c39bc061655a06d6da7bd1f448c4de26a181e5710d74b4391923fb37ddadb</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\bsp\bsp.h</file>
-         <hash>fbdee9ae102655d833dbbde43f0c74014ba1dee64e80f5617a56f3e2b6ef1f2b</hash>
+         <hash>d0343c84036b629465ed01d165ab0087f9ec40e6486570b82f04d300159fcffe</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

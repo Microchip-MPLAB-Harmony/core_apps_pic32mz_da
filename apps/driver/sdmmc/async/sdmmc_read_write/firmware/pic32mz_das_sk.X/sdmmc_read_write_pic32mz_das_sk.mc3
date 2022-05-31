@@ -1,4 +1,4 @@
-<config configName="pic32mz_das_sk" projectName="sdmmc_read_write_pic32mz_das_sk" configVersion="1.1" device="PIC32MZ2064DAS169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.3">
+<config configName="pic32mz_das_sk" projectName="sdmmc_read_write_pic32mz_das_sk" configVersion="1.1" device="PIC32MZ2064DAS169" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -39,7 +39,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -5849,11 +5849,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>80d2b4e2cbd20dae0c450d16c1a90b418d0c55f5856ceb12e75dcf9cb1d171ba</hash>
+         <hash>8817659e1ccddea554a7921097a4c12835a8f23afa41916e24183270eb9b0337</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.h</file>
-         <hash>52337e64d944c61a5a09e16b51ac7b323a547aa3d4039397c1718c579d226b1f</hash>
+         <hash>df6d121e8464522528a5a7b03eae4bc3436ee5ed9c9af4ad80563bdecd26dc8e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\int\src\sys_int.c</file>
@@ -5865,7 +5865,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\debug\sys_debug.h</file>
-         <hash>970de73fb9806906b5429168c66ab403309d8a9cad46febab875a5e6d071525e</hash>
+         <hash>16fbc4bbf026e4713e9b835b1511411e053aaf92ab7d6a000638630576fe92b3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\coretimer\plib_coretimer.h</file>
@@ -5881,7 +5881,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
          <file>..\src\app.c</file>
@@ -5901,11 +5901,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\driver\sdmmc\src\drv_sdmmc_local.h</file>
-         <hash>ae775acfc3c3acc0572bb010773b396ae164311e547299cc0f5098a430e37381</hash>
+         <hash>6636f9435b8e6db473bd22410b84550ca0ac22283da3480bc292b1a9a6ef03d3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\time\src\sys_time_local.h</file>
-         <hash>a761ad68ce0cbac8c326bd17e54cc01d10324ed8d5e120ef092856a21604b6a2</hash>
+         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\configuration.h</file>
@@ -5921,7 +5921,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\toolchain_specifics.h</file>
-         <hash>5a13891d073d2ad5773c0c59ebe34074f2373103d565643f9e36a3b792feae9c</hash>
+         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\sdhc\plib_sdhc.h</file>
@@ -5989,11 +5989,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\driver\sdmmc\drv_sdmmc.h</file>
-         <hash>adfd11fa4fb647cbc17073c5e43c29875b46cef63c016b655ef8d6bed9d514e2</hash>
+         <hash>7521b2ccf0bf9505fa4180aa436c0bdf91511c8db534011ec2f3769fcc02cb76</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\peripheral\evic\plib_evic.c</file>
-         <hash>2ef09459d529c97b3d5861f78e95e2bef2887d367c6a48d42a3ffcdb15fb0107</hash>
+         <hash>810c7db87929fd5303bfe77b6c328c08564ba2dad1e1ff1ebf5ffc88cdc830f0</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
@@ -6001,11 +6001,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\system\time\src\sys_time.c</file>
-         <hash>ddec1a83e32b63552ae72f884dc849e376b60d411669554f7ec492fff180662f</hash>
+         <hash>4c2c39bc061655a06d6da7bd1f448c4de26a181e5710d74b4391923fb37ddadb</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_das_sk\bsp\bsp.h</file>
-         <hash>b618109d3dad143de7f124ab0221c11e96d8a799a527477ec546c075030a0d66</hash>
+         <hash>b5fbb3d063cb539292b273d99ac81f7fa470acfde7f5f495f4cedb83006cad17</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

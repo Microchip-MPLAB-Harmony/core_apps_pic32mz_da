@@ -78,7 +78,7 @@ void SDHC_CardDetectEnable( void );
 
 void SDHC_CardDetectDisable( void );
 
-bool SDHC_ClockSet ( uint32_t clock);
+bool SDHC_ClockSet ( uint32_t speed);
 
 void SDHC_ClockEnable ( void );
 

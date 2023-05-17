@@ -56,8 +56,8 @@
 #include "system/time/sys_time.h"
 #include "usb/usb_device_cdc.h"
 #include "usb/usb_cdc.h"
-#include "peripheral/coretimer/plib_coretimer.h"
 #include "driver/usb/usbhs/drv_usbhs.h"
+#include "peripheral/coretimer/plib_coretimer.h"
 #include "bsp/bsp.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_usb_cdc_definitions.h"
@@ -75,6 +75,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32MZ2064DAS169"
+#define DEVICE_ARCH			 "MIPS"
+#define DEVICE_FAMILY		 "PIC32MZDA"
+#define DEVICE_SERIES		 "PIC32MZ"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000
@@ -191,7 +197,7 @@ typedef struct
 {
     SYS_MODULE_OBJ  sysConsole1;
 
-	SYS_MODULE_OBJ  usbDevObject0;
+    SYS_MODULE_OBJ  usbDevObject0;
 
     SYS_MODULE_OBJ  sysTime;
     SYS_MODULE_OBJ  sysDebug;

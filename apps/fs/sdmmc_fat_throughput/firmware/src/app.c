@@ -92,7 +92,7 @@
 APP_DATA appData;
 
 /* Application data buffer. Adding 1 to size to use it for Unaligned throughput */
-uint8_t __ALIGNED(CACHE_LINE_SIZE) dataBuffer[BUFFER_SIZE + 1];
+static uint8_t __ALIGNED(CACHE_LINE_SIZE) dataBuffer[BUFFER_SIZE + 1];
 
 uint8_t *dataPtr = NULL;
 

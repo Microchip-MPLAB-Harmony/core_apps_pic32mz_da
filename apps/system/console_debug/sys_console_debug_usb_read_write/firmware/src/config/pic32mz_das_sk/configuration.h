@@ -135,31 +135,31 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* Number of Endpoints used */
-#define DRV_USBHS_ENDPOINTS_NUMBER                        6
+#define DRV_USBHS_ENDPOINTS_NUMBER                        6U
 
 /* The USB Device Layer will not initialize the USB Driver */
 #define USB_DEVICE_DRIVER_INITIALIZE_EXPLICIT
 
 /* Maximum device layer instances */
-#define USB_DEVICE_INSTANCES_NUMBER                         1
+#define USB_DEVICE_INSTANCES_NUMBER                         1U
 
 /* EP0 size in bytes */
-#define USB_DEVICE_EP0_BUFFER_SIZE                          64
+#define USB_DEVICE_EP0_BUFFER_SIZE                          64U
 
 
 /* Maximum instances of CDC function driver */
-#define USB_DEVICE_CDC_INSTANCES_NUMBER                     2
+#define USB_DEVICE_CDC_INSTANCES_NUMBER                     2U
 
 
 /* CDC Transfer Queue Size for both read and
    write. Applicable to all instances of the
    function driver */
-#define USB_DEVICE_CDC_QUEUE_DEPTH_COMBINED                 6
+#define USB_DEVICE_CDC_QUEUE_DEPTH_COMBINED                 6U
 
 /*** USB Driver Configuration ***/
 
 /* Maximum USB driver instances */
-#define DRV_USBHS_INSTANCES_NUMBER                        1
+#define DRV_USBHS_INSTANCES_NUMBER                        1U
 
 /* Interrupt mode enabled */
 #define DRV_USBHS_INTERRUPT_MODE                          true
@@ -167,15 +167,17 @@ extern "C" {
 
 /* Enables Device Support */
 #define DRV_USBHS_DEVICE_SUPPORT                          true
-	
+
 /* Disable Host Support */
 #define DRV_USBHS_HOST_SUPPORT                            false
 
 
 
 
+
 /* Alignment for buffers that are submitted to USB Driver*/ 
 #define USB_ALIGN  CACHE_ALIGN  __ALIGNED(16)
+
 
 
 

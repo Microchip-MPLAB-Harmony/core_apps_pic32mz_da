@@ -128,9 +128,10 @@
 // *****************************************************************************
 // *****************************************************************************
 /* Following MISRA-C rules are deviated in the below code block */
-/* MISRA C-2012 Rule 11.1 */
-/* MISRA C-2012 Rule 11.3 */
-/* MISRA C-2012 Rule 11.8 */
+/* MISRA C-2012 Rule 7.2 - Deviation record ID - H3_MISRAC_2012_R_7_2_DR_1 */
+/* MISRA C-2012 Rule 11.1 - Deviation record ID - H3_MISRAC_2012_R_11_1_DR_1 */
+/* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+/* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
 
 
 
@@ -151,21 +152,20 @@ SYSTEM_OBJECTS sysObj;
  * USB Driver Initialization
  ******************************************************/
 
-const DRV_USBHS_INIT drvUSBInit =
+static const DRV_USBHS_INIT drvUSBInit =
 {
     /* Interrupt Source for USB module */
     .interruptSource = INT_SOURCE_USB,
 
-	/* Interrupt Source for USB module */
+    /* Interrupt Source for USB module */
     .interruptSourceUSBDma = INT_SOURCE_USB_DMA,
-	
     /* System module initialization */
     .moduleInit = {0},
 
     /* USB Controller to operate as USB Device */
     .operationMode = DRV_USBHS_OPMODE_DEVICE,
 
-	/* Enable High Speed Operation */
+    /* Enable High Speed Operation */
     .operationSpeed = USB_SPEED_HIGH,
     
     /* Stop in idle */
@@ -176,7 +176,7 @@ const DRV_USBHS_INIT drvUSBInit =
 
     /* Identifies peripheral (PLIB-level) ID */
     .usbID = USBHS_ID_0,
-	
+
 };
 
 
@@ -198,7 +198,7 @@ static uint8_t CACHE_ALIGN sysConsole1USBCdcWrBuffer[SYS_CONSOLE_USB_CDC_READ_WR
 static uint8_t sysConsole1USBCdcRdRingBuffer[SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX1];
 static uint8_t sysConsole1USBCdcWrRingBuffer[SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX1];
 
-const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole1USBCdcInitData =
+static const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole1USBCdcInitData =
 {
     .cdcInstanceIndex           = 1,
     .cdcReadBuffer              = sysConsole1USBCdcRdBuffer,
@@ -209,7 +209,7 @@ const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole1USBCdcInitData =
     .consoleWriteBufferSize     = SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX1,
 };
 
-const SYS_CONSOLE_INIT sysConsole1Init =
+static const SYS_CONSOLE_INIT sysConsole1Init =
 {
     .deviceInitData = (const void*)&sysConsole1USBCdcInitData,
     .consDevDesc = &sysConsoleUSBCdcDevDesc,
@@ -258,7 +258,7 @@ static uint8_t CACHE_ALIGN sysConsole0USBCdcWrBuffer[SYS_CONSOLE_USB_CDC_READ_WR
 static uint8_t sysConsole0USBCdcRdRingBuffer[SYS_CONSOLE_USB_CDC_RD_BUFFER_SIZE_IDX0];
 static uint8_t sysConsole0USBCdcWrRingBuffer[SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX0];
 
-const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole0USBCdcInitData =
+static const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole0USBCdcInitData =
 {
     .cdcInstanceIndex           = 0,
     .cdcReadBuffer              = sysConsole0USBCdcRdBuffer,
@@ -269,7 +269,7 @@ const SYS_CONSOLE_USB_CDC_INIT_DATA sysConsole0USBCdcInitData =
     .consoleWriteBufferSize     = SYS_CONSOLE_USB_CDC_WR_BUFFER_SIZE_IDX0,
 };
 
-const SYS_CONSOLE_INIT sysConsole0Init =
+static const SYS_CONSOLE_INIT sysConsole0Init =
 {
     .deviceInitData = (const void*)&sysConsole0USBCdcInitData,
     .consDevDesc = &sysConsoleUSBCdcDevDesc,
@@ -323,7 +323,6 @@ void SYS_Initialize ( void* data )
     CORETIMER_Initialize();
 	BSP_Initialize();
 
-
     /* MISRAC 2012 deviation block start */
     /* Following MISRA-C rules deviated in this block  */
     /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
@@ -356,8 +355,8 @@ void SYS_Initialize ( void* data )
     sysObj.usbDevObject0 = USB_DEVICE_Initialize (USB_DEVICE_INDEX_0 , ( SYS_MODULE_INIT* ) & usbDevInitData);
 
 
-	/* Initialize USB Driver */ 
-    sysObj.drvUSBHSObject = DRV_USBHS_Initialize(DRV_USBHS_INDEX_0, (SYS_MODULE_INIT *) &drvUSBInit);	
+    /* Initialize USB Driver */ 
+    sysObj.drvUSBHSObject = DRV_USBHS_Initialize(DRV_USBHS_INDEX_0, (SYS_MODULE_INIT *) &drvUSBInit);    
 
 
     /* MISRAC 2012 deviation block end */

@@ -69,6 +69,7 @@
 #define APP_CLIENT2_CS_OutputEnable()      (TRISKCLR = (1U<<2))
 #define APP_CLIENT2_CS_InputEnable()       (TRISKSET = (1U<<2))
 #define APP_CLIENT2_CS_Get()               ((PORTK >> 2) & 0x1U)
+#define APP_CLIENT2_CS_GetLatch()          ((LATK >> 2) & 0x1U)
 #define APP_CLIENT2_CS_PIN                  GPIO_PIN_RK2
 
 /*** Macros for APP_CLIENT1_CS pin ***/
@@ -78,6 +79,7 @@
 #define APP_CLIENT1_CS_OutputEnable()      (TRISKCLR = (1U<<1))
 #define APP_CLIENT1_CS_InputEnable()       (TRISKSET = (1U<<1))
 #define APP_CLIENT1_CS_Get()               ((PORTK >> 1) & 0x1U)
+#define APP_CLIENT1_CS_GetLatch()          ((LATK >> 1) & 0x1U)
 #define APP_CLIENT1_CS_PIN                  GPIO_PIN_RK1
 
 
@@ -297,7 +299,7 @@ void GPIO_PortOutputEnable(GPIO_PORT port, uint32_t mask);
 
 static inline void GPIO_PinWrite(GPIO_PIN pin, bool value)
 {
-	 uint32_t xvalue = (uint32_t)value;
+     uint32_t xvalue = (uint32_t)value;
     GPIO_PortWrite((pin>>4U), (uint32_t)(0x1U) << (pin & 0xFU), (xvalue) << (pin & 0xFU));
 }
 

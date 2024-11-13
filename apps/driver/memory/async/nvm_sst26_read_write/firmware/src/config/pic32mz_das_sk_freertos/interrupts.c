@@ -78,12 +78,12 @@ void SQI1_Handler (void);
 // *****************************************************************************
 
 
-void FLASH_CONTROL_Handler (void)
+void __attribute__((used)) FLASH_CONTROL_Handler (void)
 {
     NVM_InterruptHandler();
 }
 
-void SQI1_Handler (void)
+void __attribute__((used)) SQI1_Handler (void)
 {
     SQI1_InterruptHandler();
 }

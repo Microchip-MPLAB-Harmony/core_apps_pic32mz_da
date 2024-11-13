@@ -86,7 +86,7 @@ static void SDHC_Delay(uint16_t timeout)
     }
 }
 
-static uint16_t SDHC_TransferModeSet ( uint32_t opcode )
+static uint16_t SDHC_TransferModeSet ( uint32_t opcode, SDHC_DataTransferFlags transferFlags )
 {
     uint16_t transfer_mode_reg = 0;
 
@@ -114,6 +114,17 @@ static uint16_t SDHC_TransferModeSet ( uint32_t opcode )
             transfer_mode_reg = (_SDHCMODE_DMAEN_MASK | _SDHCMODE_BSEL_MASK | _SDHCMODE_BCEN_MASK);
             break;
 
+        case (uint32_t)SDHC_CMD_IO_RW_EXT:
+            if (transferFlags.transferType == SDHC_DATA_TRANSFER_TYPE_SDIO_BLOCK)
+            {
+                transfer_mode_reg = _SDHCMODE_BSEL_MASK | _SDHCMODE_BCEN_MASK;
+            }
+            if (transferFlags.transferDir == SDHC_DATA_TRANSFER_DIR_READ)
+            {
+                transfer_mode_reg |= _SDHCMODE_DTXDSEL_MASK;
+            }
+            transfer_mode_reg |= _SDHCMODE_DMAEN_MASK;
+            break;
         default:
                  /* Nothing to do */
             break;
@@ -491,7 +502,7 @@ void SDHC_CommandSend (
     {
         sdhcObj.isDataInProgress = true;
         cmd_reg |= ((uint32_t)transferFlags.isDataPresent << _SDHCMODE_DPSEL_POSITION);
-        transfer_mode_reg = SDHC_TransferModeSet(opCode);
+        transfer_mode_reg = SDHC_TransferModeSet(opCode, transferFlags);
         /* Enable data transfer complete and DMA interrupt */
         normal_int_sig_enable_reg |= (_SDHCINTSEN_TXCISE_MASK | _SDHCINTSEN_DMAISE_MASK);
     }

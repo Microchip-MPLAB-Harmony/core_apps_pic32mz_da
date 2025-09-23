@@ -1,0 +1,117 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MZ2064DAS169
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- BSP_PIC32MZ_DA_Starter_Kit
+- HarmonyCore
+- core
+- core_timer
+- dfp
+- drv_sdmmc
+- drv_sdmmc_0
+- sdhc
+- sys_time
+generatedFileHashHistoryMap:
+- file: ..\src\app.c
+  hash: 632c78c323cb9f8c6359f20337440c08f8461eb4b0304552b6a3cfd5c4052620
+- file: ..\src\app.h
+  hash: 8e35d8509552a4d1d6e6f123ad75694cf784a707f7dac592ed33b55121aa8e28
+- file: ..\src\config\pic32mz_das_sk\bsp\bsp.c
+  hash: 87db8928e9f5f07ebf761743f563efddce6b8a71cad84df2e3fb7b2235377708
+- file: ..\src\config\pic32mz_das_sk\bsp\bsp.h
+  hash: cf70c1b83b617a108cf9b49a86999ebaf491c7cbf49b74e64ed1d686b2ed3c90
+- file: ..\src\config\pic32mz_das_sk\configuration.h
+  hash: 218eeb39e8e807abfaf9032aba3ecf938736d7826494140f13e30223fda0ef74
+- file: ..\src\config\pic32mz_das_sk\definitions.h
+  hash: d4535009e8bf536b99acbe0b97fb5e820ead52ee837d1f7c7f17214cbd4d21b9
+- file: ..\src\config\pic32mz_das_sk\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mz_das_sk\driver\driver.h
+  hash: 042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d
+- file: ..\src\config\pic32mz_das_sk\driver\driver_common.h
+  hash: 5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee
+- file: ..\src\config\pic32mz_das_sk\driver\sdmmc\drv_sdmmc.h
+  hash: c5d691b9e451cbaa787f6e17e8a2314e55de8ed624407a06191705cd8a3a51c6
+- file: ..\src\config\pic32mz_das_sk\driver\sdmmc\drv_sdmmc_definitions.h
+  hash: 114372fe83a7aabc017360e961ea6aa0cb3006e819af7947393d097fc00f364d
+- file: ..\src\config\pic32mz_das_sk\driver\sdmmc\src\drv_sdmmc.c
+  hash: 31daa225a2885f407893a084ddb49a6cbc28431a6459d152de4130e352d5117c
+- file: ..\src\config\pic32mz_das_sk\driver\sdmmc\src\drv_sdmmc_local.h
+  hash: b427ef3889c8965b25bb18d0db1391e14398ca4309be603ba4f60ab5d23aab3d
+- file: ..\src\config\pic32mz_das_sk\exceptions.c
+  hash: 8c1843dacd6aec28ef12be3d763763a268e0facd02d4f1e7d67e21a8d73061d1
+- file: ..\src\config\pic32mz_das_sk\initialization.c
+  hash: 4a82539628d052aa52ecd01478a4edfeb20fde600a975a66439305f5758c4517
+- file: ..\src\config\pic32mz_das_sk\interrupts.c
+  hash: 0dd920ae47c872d9af3881c4a93fa7bc3277876c6fff83352960ee7a4f3c7a9f
+- file: ..\src\config\pic32mz_das_sk\interrupts.h
+  hash: e13324c3f300835602acd02f7bdb0477818ad997f3bb330ccf1b8f1df6f3556e
+- file: ..\src\config\pic32mz_das_sk\osal\osal.h
+  hash: 1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c
+- file: ..\src\config\pic32mz_das_sk\osal\osal_definitions.h
+  hash: 5f0a2513a093b6d228e2b50646b204923a82047335a47f3d35a2938309ab6f37
+- file: ..\src\config\pic32mz_das_sk\osal\osal_impl_basic.h
+  hash: 65e68edbc0320d0407399f65e6d06ff7e6d3d7697231cf1fe0a1fdf1d65f0463
+- file: ..\src\config\pic32mz_das_sk\p32MZ2064DAS169.ld
+  hash: 8cf65885859b9033ccc87c2df5ac27a0caa7fd74e692bfb7321d3bbfb8c6c474
+- file: ..\src\config\pic32mz_das_sk\peripheral\clk\plib_clk.c
+  hash: e72db642b44a1cfb20a8aa673eea5c3a412ecd90413637ae0e1203dc52538b57
+- file: ..\src\config\pic32mz_das_sk\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mz_das_sk\peripheral\coretimer\plib_coretimer.c
+  hash: d2e0839da9beba86ea927aad046330882835e6d1177f6f327eba3e7ecc7e66ff
+- file: ..\src\config\pic32mz_das_sk\peripheral\coretimer\plib_coretimer.h
+  hash: d88929a1d7d6d0428c517cb789359c574c42d52c3c8a04bb267990255ad81706
+- file: ..\src\config\pic32mz_das_sk\peripheral\evic\plib_evic.c
+  hash: ec94fff94758fe455db5237a166766956308c530ab0730113ac268f85e7450f8
+- file: ..\src\config\pic32mz_das_sk\peripheral\evic\plib_evic.h
+  hash: d1fec6ef0926472bfe0bfa15972adff5caf1a29f8741ce146f90f5efa45db06b
+- file: ..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.c
+  hash: 6f7cbc41dacb8dbddc06bd4f52c7149d337b470aa7743006cd5caedd07417f65
+- file: ..\src\config\pic32mz_das_sk\peripheral\gpio\plib_gpio.h
+  hash: 108fc503975f63e53fb4ce73a77f7bd0ff77c1bca060b91a7ad75b74c1861488
+- file: ..\src\config\pic32mz_das_sk\peripheral\sdhc\plib_sdhc.c
+  hash: 931bf56b6e48fc8de7a4c868d1e3f880d103f31688559be5c756c7b82ef2ce99
+- file: ..\src\config\pic32mz_das_sk\peripheral\sdhc\plib_sdhc.h
+  hash: b165a938128195df76745b2dc0c5c6906eac9fe61f7a7b64e1b347c674eb9571
+- file: ..\src\config\pic32mz_das_sk\peripheral\sdhc\plib_sdhc_common.h
+  hash: 6d30881c7d0610d0319debac1920577a2a418f748ec67f40695e785d3dc1950f
+- file: ..\src\config\pic32mz_das_sk\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\pic32mz_das_sk\sys_tasks.h
+  hash: 21f254f497a18a024cd00128d06c4776c2643f867a460c1ba9880a7dd41a8d56
+- file: ..\src\config\pic32mz_das_sk\system\debug\sys_debug.h
+  hash: aa94da8f32cbcb40672145542d149d077ff8f4b25c08d47d53e3d206d1c6bb83
+- file: ..\src\config\pic32mz_das_sk\system\int\src\sys_int.c
+  hash: 30ac5e334ca90204f545f1ab769ae26f421b910b3fb3be99354b364febceee64
+- file: ..\src\config\pic32mz_das_sk\system\int\sys_int.h
+  hash: 2c878ab7ff41ae56b5c0c3c94929ad66eb87b8660bf9a439177d049e8ad8f8c8
+- file: ..\src\config\pic32mz_das_sk\system\int\sys_int_mapping.h
+  hash: a2dcf05575becc98aa212af1d220eda07487bd645d82c4d7a980aa3a22384cf3
+- file: ..\src\config\pic32mz_das_sk\system\system.h
+  hash: 2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55
+- file: ..\src\config\pic32mz_das_sk\system\system_common.h
+  hash: c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984
+- file: ..\src\config\pic32mz_das_sk\system\system_media.h
+  hash: e61ba67015cfba6a7425d077cd2c633ba9989218bbe585078efe2face729401f
+- file: ..\src\config\pic32mz_das_sk\system\system_module.h
+  hash: 96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9
+- file: ..\src\config\pic32mz_das_sk\system\time\src\sys_time.c
+  hash: fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271
+- file: ..\src\config\pic32mz_das_sk\system\time\src\sys_time_local.h
+  hash: df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c
+- file: ..\src\config\pic32mz_das_sk\system\time\sys_time.h
+  hash: 6357468f7670698b16bfb6439d9919ed38eba99d4f03277a8b43ac34586fa1b3
+- file: ..\src\config\pic32mz_das_sk\system\time\sys_time_definitions.h
+  hash: 46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6
+- file: ..\src\config\pic32mz_das_sk\tasks.c
+  hash: 1b634f5ffa08ba2269b71c13636ee2b24bb9fe6ccbacde7021b3a6315e4702f4
+- file: ..\src\config\pic32mz_das_sk\toolchain_specifics.h
+  hash: fd2fc7bbe60706409cc0c0a525825c0194f6f71adc0a89e6310041f06dc2f645
+- file: ..\src\config\pic32mz_das_sk\user.h
+  hash: 451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5

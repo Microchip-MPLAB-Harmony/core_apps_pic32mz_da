@@ -3,6 +3,33 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 driver and system service application examples for PIC32MZ DA family v3.6.0
+
+### Development kit and demo application support
+
+Following table provides number of driver and system service examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit](https://www.microchip.com/en-us/development-tool/DM320010) | 9 |
+| [PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320010-C) | 17 |
+| [PIC32MZ Embedded Graphics with External DRAM (DA) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320008) | 2 |
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE 6.25](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) 5.6.2
+- [MPLAB® XC32 C/C++ Compiler 4.60](https://www.microchip.com/mplab/compilers)
+
 ## Harmony 3 driver and system service application examples for PIC32MZ DA family v3.5.0
 
 ### Development kit and demo application support
